@@ -264,7 +264,7 @@ class AbstractPropertyOutliers(SingleDatasetCheck):
         else:
             lowest_values_idx = np.argpartition([np.inf if v is None else v for v in property_values],
                                                 self.n_show_top)[:self.n_show_top]
-            highest_values_idx = np.argpartition([np.NINF if v is None else v for v in property_values],
+            highest_values_idx = np.argpartition([-np.inf if v is None else v for v in property_values],
                                                  -self.n_show_top)[-self.n_show_top:]
 
         if is_property_per_label:

@@ -87,7 +87,7 @@ class DeepchecksBaseFilter(DeepchecksFilter):
                 original_range = self.filters[feature_name]
                 self.filters[feature_name] = [original_range[0], min(threshold, original_range[1])]
             else:
-                self.filters[feature_name] = [np.NINF, threshold]
+                self.filters[feature_name] = [-np.inf, threshold]
         self.filter_functions += filter_func
         return self
 
