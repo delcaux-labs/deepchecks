@@ -113,7 +113,7 @@ regression_scorers_higher_is_better_dict = {
     'neg_mae': get_scorer('neg_mean_absolute_error'),
     'r2': get_scorer('r2'),
     'explained_variance': get_scorer('explained_variance'),
-    'max_error': get_scorer('max_error'),
+    'max_error': get_scorer('neg_max_error'),
     'neg_mean_squared_log_error': get_scorer('neg_mean_squared_log_error'),
     'neg_median_absolute_error': get_scorer('neg_median_absolute_error'),
     'neg_mean_poisson_deviance': get_scorer('neg_mean_poisson_deviance'),
