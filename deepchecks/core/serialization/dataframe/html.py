@@ -13,7 +13,7 @@ import typing as t
 
 import pandas as pd
 from pandas.io.formats.style import Styler
-from pkg_resources import parse_version
+from packaging.version import parse as parse_version
 
 from deepchecks.core.serialization.abc import HtmlSerializer
 
